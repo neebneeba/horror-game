@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dxc6kwa55p8dr"]
+
+[node name="Settings" type="Node2D" unique_id=69251677]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=310211866]
+
+[node name="start" type="Button" parent="." unique_id=1840159646]
+text = "Pizda
+"

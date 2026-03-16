@@ -11,8 +11,15 @@ config_version=5
 [application]
 
 config/name="horror-game"
+run/main_scene="uid://cw0ftn4sy8o13"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
 
 [physics]
 

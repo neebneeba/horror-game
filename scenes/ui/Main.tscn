@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cw0ftn4sy8o13"]
+
+[ext_resource type="Script" uid="uid://dcl872ye8dxen" path="res://scripts/main.gd" id="1_cc00j"]
+[ext_resource type="VideoStream" uid="uid://b6ju1vbowuh3" path="res://assets/video/main-menu-intro.ogv" id="2_rigbv"]
+[ext_resource type="AudioStream" uid="uid://cy17smdxar32l" path="res://assets/audio/main-menu-background.mp3" id="3_rigbv"]
+
+[node name="Main" type="Node2D" unique_id=1589691750]
+script = ExtResource("1_cc00j")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=376137305]
+
+[node name="BackgroundVideo" type="VideoStreamPlayer" parent="." unique_id=271633149]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9976221, 1.0005752)
+stream = ExtResource("2_rigbv")
+autoplay = true
+loop = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=787975509]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 850.0
+offset_top = -50.5
+offset_right = 913.0012
+offset_bottom = 50.5
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1795732002]
+layout_mode = 2
+text = "Start
+"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1418209378]
+layout_mode = 2
+text = "Setting"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=648895954]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="BackgroundAudio" type="AudioStreamPlayer2D" parent="." unique_id=1802789362]
+stream = ExtResource("3_rigbv")
+autoplay = true
